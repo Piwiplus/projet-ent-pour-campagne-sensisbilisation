@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8E6"
+    android:scaleX="1"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="364dp"
+        android:layout_height="628dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.343"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="287dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="28dp"
+            android:autoText="false"
+            android:backgroundTint="#ffffff"
+            android:text="+  Personnel non enseignant"
+            android:textAlignment="textStart"
+            android:textColor="#0277BD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.337"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4"
+            tools:ignore="Deprecated,HardcodedText,TextViewEdits,TextContrastCheck" />
+
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="287dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:autoText="false"
+            android:backgroundTint="#ffffff"
+            android:text="+  Personnels de collectivité"
+            android:textAlignment="textStart"
+            android:textColor="#0277BD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.337"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button5"
+            tools:ignore="Deprecated,HardcodedText,TextViewEdits,TextContrastCheck" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="330dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#0F0FE4"
+            android:text="Valider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="#2985CB"
+            tools:ignore="HardcodedText,VisualLintButtonSize,TextContrastCheck" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="283dp"
+            android:layout_height="50dp"
+            android:text="Elève ou parent"
+            android:buttonTint="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.721"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="321dp"
+            android:layout_height="22dp"
+            android:text="Vous voulez vous connecter à l'ENT en tant que :"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.608"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="281dp"
+            android:layout_height="60dp"
+            android:text="Enseignement agricole"
+            android:buttonTint="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.367"
+            tools:ignore="HardcodedText" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:text="Autres comptes et invités"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.925"
+            tools:ignore="HardcodedText"/>
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="287dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="28dp"
+            android:autoText="false"
+            android:backgroundTint="#ffffff"
+            android:text="+  Enseignant"
+            android:textAlignment="textStart"
+            android:textColor="#0277BD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.337"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+            tools:ignore="Deprecated,HardcodedText,TextViewEdits,TextContrastCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="416dp"
+        android:layout_height="75dp"
+        android:background="#FFFFFF"
+        tools:ignore="MissingConstraints,VisualLintBounds"
+        tools:layout_editor_absoluteX="-3dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
